@@ -129,4 +129,5 @@ span.langelement.lost::before {
   height: 40px;
   margin-top: 20px;
   border-radius: 5px;
+  cursor: pointer;
 }

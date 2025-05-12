@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-color: #262626;
+  color: #d9d9d9;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ins {
+  color: #8e8e8e;
+  text-align: center;
+  max-width: 60%;
+  margin: 10px;
+}
+.correct {
+  background-color: #10a95b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border-radius: 5px;
+  margin-block: 20px;
+  color: #f9f4da;
+}
+.correct > h3 {
+  font-size: 1.5rem;
+  margin: 5px;
+}
+.correct > p {
+  margin: 5px;
+  font-size: 1.25rem;
+}
+.wrong {
+  background-color: #BA2A2A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border-radius: 5px;
+  margin-block: 20px;
+  color: #f9f4da;
+}
+.wrong > h3 {
+  font-size: 1.5rem;
+  margin: 5px;
+}
+.wrong > p {
+  margin: 5px;
+  font-size: 1.25rem;
+}
+.neutral {
+  background-color: #7A5EA7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  border-radius: 5px;
+  margin-block: 20px;
+  color: #f9f4da;
+}
+.neutral > p {
+  font-size: 1.5rem;
+}
+
+.lang {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+}
+span.langelement {
+  padding: 5px;
+  font-weight: bold;
+  margin: 2px;
+  border-radius: 4px;
+  position: relative;
+}
+span.langelement.lost::before {
+  content: "💀";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  font-size: 0.85rem;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.word {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 800px;
+  justify-content: center;
+}
+
+.newgame {
+  background-color: #11b5e5;
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
